@@ -6,4 +6,5 @@ local builtin = require("telescope.builtin")
 vim.keymap.set('n', '<C-n>', '<cmd>:Neotree filesystem reveal left<cr>')
 vim.keymap.set('n', '<C-g>', builtin.git_commits)
 vim.keymap.set('n', '<C-l>', '<cmd>:Telescope notify<cr>')
+vim.keymap.set('n', '<leader>gf', vim.lsp.buf.format, {})
 -- Set the key mapping to call the custom function
