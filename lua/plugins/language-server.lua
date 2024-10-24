@@ -1,5 +1,5 @@
 return {
-	--  Neovim plugin that allows you to easily manage external editor tooling
+	--  Neovim plugin that allows you to easily install lsp's
 	{
     	"williamboman/mason.nvim",
 	config = function()
@@ -17,15 +17,14 @@ return {
 	end,
 	},
 
+  -- Allows for lsp integration within nvim
 	{
 	"neovim/nvim-lspconfig",
 	config = function()
 	local lsp = require("lspconfig")
-		 
 	-- These are my server setups
 	lsp.lua_ls.setup({})
     	lsp.pyright.setup({})
-	
 	end,
 	}
 
